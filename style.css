@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background: url('https://photoartlove.files.wordpress.com/2014/09/road-in-the-dark-city-photography-hd-wallpaper-1920x1200-2542.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 80vh;
+    min-width: 100%;
+}
+
+.header {
+    padding: 30px 0;
+    color: #fff;
+    font-size: x-large;
+}
+
+.form {
+    background: #fff;
+    box-shadow: 0 0 20px #444;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .img img {
+        margin-top: 30px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .img img {
+        margin-top: 30px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .img img {
+        margin-top: 30px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .img img {
+        margin-top: 300px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .img img {
+        margin-top: 300px;
+    }
+}
