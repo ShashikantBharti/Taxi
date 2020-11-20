@@ -13,7 +13,7 @@ $location = array(
 $pickup = $_REQUEST['pickup'];
 $drop = $_REQUEST['drop'];
 $c_type = $_REQUEST['cab_type'];
-$luggage = $_REQUEST['luggage'] == '' ? 0 : $_REQUEST['luggage'];
+$luggage = $_REQUEST['luggage'];
 
 $fare = 0;
 $distance = abs($location[$drop] - $location[$pickup]);
@@ -36,7 +36,7 @@ switch($c_type) {
 			$fare += 100 * 10.20;
 			$fare += ($distance - 100 - 50 - 10) * 10.20;
 		}
-	; 
+	
 	break;
 	case 2: 
 		$fare = 150;
@@ -56,14 +56,16 @@ switch($c_type) {
 			$fare += ($distance - 100 - 50 - 10) * 9.50;
 		}
 
-		if($luggage < 10) {
+		if($luggage != 0 && $luggage <= 10) {
 			$fare += 50;
 		} else if ($luggage > 10 && $luggage <= 20) {
 			$fare += 100;
-		} else {
+		} else if($luggage > 20){
 			$fare += 200;
+		} else {
+			$fare += 0;
 		}
-	; 
+	
 	break;
 	case 3: 
 		$fare = 200;
@@ -83,14 +85,16 @@ switch($c_type) {
 			$fare += ($distance - 100 - 50 - 10) * 10.50;
 		}
 
-		if($luggage < 10) {
+		if($luggage != 0 && $luggage <= 10) {
 			$fare += 50;
 		} else if ($luggage > 10 && $luggage <= 20) {
 			$fare += 100;
-		} else {
+		} else if($luggage > 20){
 			$fare += 200;
+		} else {
+			$fare += 0;
 		}
-	; 
+	 
 	break;
 	case 4: 
 		$fare = 250;
@@ -110,14 +114,16 @@ switch($c_type) {
 			$fare += ($distance - 100 - 50 - 10) * 11.50;
 		}
 
-		if($luggage < 10) {
+		if($luggage != 0 && $luggage <= 10) {
 			$fare += 50 * 2;
 		} else if ($luggage > 10 && $luggage <= 20) {
 			$fare += 100 * 2;
-		} else {
+		} else if($luggage > 20){
 			$fare += 200 * 2;
+		} else {
+			$fare += 0;
 		}
-	; 
+	
 	break;
 }
 
