@@ -1,5 +1,13 @@
 $(document).ready(function() {
     $('#form').on('submit', calculateFare);
+    $('select[name="cab_type"]').on('change',function(){
+        if($(this).val() == 1) {
+            $('.luggage').hide();
+            $('.luggage input').val('');
+        } else {
+            $('.luggage').show();
+        }
+    });
 
     function calculateFare(e) {
         e.preventDefault();
@@ -11,7 +19,7 @@ $(document).ready(function() {
             contentType: false,
             processData: false,
             success: function(res) {
-                $('.result').html(`<h1>Total Fare : Rs.${res}/-</h1>`);
+                $('.result').html(`<p>${res}</p>`);
             }
         });
     }
