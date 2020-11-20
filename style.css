@@ -43,8 +43,7 @@ main {
 }
 .input-group input:focus,
 .input-group select:focus {
-    outline: none;
-    border: none;
+    box-shadow: none;
 }
 
 .input-group label,
