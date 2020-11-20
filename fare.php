@@ -23,10 +23,10 @@ switch($c_type) {
 		$fare = 50;
 		if($distance <= 10) {
 			$fare += $distance * 13.50;
-		} else if($distance > 10 && $distance <= 50) {
+		} else if($distance > 10 && $distance <= 60) {
 			$fare += 10 * 13.50;
 			$fare += ($distance - 10) * 12.00;
-		} else if($distance > 50 && $distance <= 100) {
+		} else if($distance > 60 && $distance <= 160) {
 			$fare += 10 * 13.50;
 			$fare += 50 * 12.00;
 			$fare += ($distance - 50 - 10) * 10.20;
@@ -34,7 +34,7 @@ switch($c_type) {
 			$fare += 10 * 13.50;
 			$fare += 50 * 12.00;
 			$fare += 100 * 10.20;
-			$fare += ($distance - 100 - 50 - 10) * 10.20;
+			$fare += ($distance - 100 - 50 - 10) * 8.50;
 		}
 	
 	break;
@@ -42,10 +42,10 @@ switch($c_type) {
 		$fare = 150;
 		if($distance <= 10) {
 			$fare += $distance * 14.50;
-		} else if($distance > 10 && $distance <= 50) {
+		} else if($distance > 10 && $distance <= 60) {
 			$fare += 10 * 14.50;
 			$fare += ($distance - 10) * 13.00;
-		} else if($distance > 50 && $distance <= 100) {
+		} else if($distance > 60 && $distance <= 160) {
 			$fare += 10 * 14.50;
 			$fare += 50 * 13.00;
 			$fare += ($distance - 50 - 10) * 11.20;
@@ -71,10 +71,10 @@ switch($c_type) {
 		$fare = 200;
 		if($distance <= 10) {
 			$fare += $distance * 15.50;
-		} else if($distance > 10 && $distance <= 50) {
+		} else if($distance > 10 && $distance <= 60) {
 			$fare += 10 * 15.50;
 			$fare += ($distance - 10) * 14.00;
-		} else if($distance > 50 && $distance <= 100) {
+		} else if($distance > 60 && $distance <= 160) {
 			$fare += 10 * 15.50;
 			$fare += 50 * 14.00;
 			$fare += ($distance - 50 - 10) * 12.20;
@@ -100,10 +100,10 @@ switch($c_type) {
 		$fare = 250;
 		if($distance <= 10) {
 			$fare += $distance * 16.50;
-		} else if($distance > 10 && $distance <= 50) {
+		} else if($distance > 10 && $distance <= 60) {
 			$fare += 10 * 16.50;
 			$fare += ($distance - 10) * 15.00;
-		} else if($distance > 50 && $distance <= 100) {
+		} else if($distance > 60 && $distance <= 160) {
 			$fare += 10 * 16.50;
 			$fare += 50 * 15.00;
 			$fare += ($distance - 50 - 10) * 13.20;

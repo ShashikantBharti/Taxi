@@ -44,6 +44,7 @@ main {
 .input-group input:focus,
 .input-group select:focus {
     box-shadow: none;
+    background: #eee;
 }
 
 .input-group label,

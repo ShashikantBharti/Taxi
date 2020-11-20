@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    $('#luggage').on('keyup',function(e){
+        if(!($(this).val().charCodeAt(0) >= 48 && $(this).val().charCodeAt(0) <= 57) && e.keyCode !== 8){
+            $(this).val('');
+            alert('Only Numbers Allowed !!');
+        }
+    });
+
     $('#form').on('submit', calculateFare);
     $('select[name="cab_type"]').on('change',function(){
         if($(this).val() == 1) {
@@ -23,4 +30,4 @@ $(document).ready(function() {
             }
         });
     }
-});
+}); 
