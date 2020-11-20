@@ -10,6 +10,7 @@ $location = array(
 		"Gorakhpur" => 210
 	);
 
+
 $pickup = $_REQUEST['pickup'];
 $drop = $_REQUEST['drop'];
 $c_type = $_REQUEST['cab_type'];
@@ -127,7 +128,7 @@ switch($c_type) {
 	break;
 }
 
-echo 'Total Fare : <strong>Rs. '.$fare.'/-</strong>';
+echo json_encode(array($fare, $distance));
 
 
 ?>

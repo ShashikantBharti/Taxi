@@ -6,6 +6,31 @@ $(document).ready(function() {
         }
     });
 
+    $('select[name="pickup"]').on('change',function(){
+        let location = $(this).val();
+        let option = $('select[name="drop"]').children();
+        $.each(option,function(index,item){
+            if(item.innerText == location){
+                $(this).hide();
+            } else {
+                $(this).show();
+            }
+        });
+    });
+
+    $('select[name="drop"]').on('change',function(){
+        let location = $(this).val();
+        let option = $('select[name="pickup"]').children();
+        $.each(option,function(index,item){
+            if(item.innerText == location){
+                $(this).hide();
+            } else {
+                $(this).show();
+            }
+        });
+    });
+
+
     $('#form').on('submit', calculateFare);
     $('select[name="cab_type"]').on('change',function(){
         if($(this).val() == 1) {
@@ -15,18 +40,25 @@ $(document).ready(function() {
             $('.luggage').show();
         }
     });
-
     function calculateFare(e) {
         e.preventDefault();
         let data = new FormData(this);
+        let html = '';
         $.ajax({
             url: "fare.php",
             method: "POST",
             data: data,
+            dataType: "json",
             contentType: false,
             processData: false,
             success: function(res) {
-                $('.result').html(`<p>${res}</p>`);
+                html += `<p>Pick Up Point : <strong>${item}</strong></p>`;
+                html += `<p>Pick Up Point : <strong>${item}</strong></p>`;
+                html += `<p>Pick Up Point : <strong>${item}</strong></p>`;
+                html += `<p>Pick Up Point : <strong>${item}</strong></p>`;
+                console.log(item);
+                $('#result').html(html);
+                console.log(html);
             }
         });
     }
