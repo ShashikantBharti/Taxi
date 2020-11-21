@@ -128,7 +128,7 @@ switch($c_type) {
 	break;
 }
 
-echo json_encode(array($fare, $distance));
+echo json_encode(array("pickup"=>$pickup, "drop"=>$drop, "fare"=>$fare, "distance"=>$distance));
 
 
 ?>

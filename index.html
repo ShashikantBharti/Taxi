@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,56 +10,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>CedCab | Hire a Taxi With Efficient Price</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Ced<span class="">Cab</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ced<span class="">Cab</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-warning text-dark" href="#">Book Taxi</a>
-            </li>
-          </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-warning text-dark" href="#">Book Taxi</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
     <!-- //Navbar -->
     <!-- Showcase -->
-    <section id="showcase" class="py-5">
-      <div class="overlay">
-        <div class="container">
-          <div class="header text-center text-light">
-            <h3>Book a City Taxi to Your Destination in Town</h3>
-            <p>Choose from a range of categories and price</p>
-          </div>
-          <div class="row">
-            <div class="col-md-5">
-              <form id="form" class="bg-light p-4">
-                <div class="form-head text-center">
-                  <span class="bg-warning py-1 px-2 fw-bold rounded-pill">City Taxi</span>
-                  <h5 class="mt-4">Your Everyday Travel Partener</h5>
-                  <p>AC Cabs for point to point travel</p>
+    <section id="showcase" class="pb-5 pt-3">
+        <div class="overlay">
+            <div class="container">
+                <div class="header text-center text-light">
+                    <h3>Book a City Taxi to Your Destination in Town</h3>
+                    <p>Choose from a range of categories and price</p>
                 </div>
-                <div class="input-group mb-3">
-                  <label class="input-group-text" for="inputGroupSelect01">PICKUP</label>
-                  <select class="form-select" aria-label="Default select example" name="pickup" required>
+                <div class="row">
+                    <div class="col-md-5">
+                        <form id="form" class="bg-light p-4">
+                            <div class="form-head text-center">
+                                <span class="bg-warning py-1 px-2 fw-bold rounded-pill">City Taxi</span>
+                                <h5 class="mt-4">Your Everyday Travel Partener</h5>
+                                <p>AC Cabs for point to point travel</p>
+                            </div>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect01">PICKUP</label>
+                                <select class="form-select" aria-label="Default select example" name="pickup" required>
                     <option value="">Current Location</option>
                     <option value="Charbagh">Charbagh</option>
                     <option value="Indira Nagar">Indira Nagar</option>
@@ -68,10 +70,10 @@
                     <option value="Basti">Basti</option>
                     <option value="Gorakhpur">Gorakhpur</option>
                   </select>
-                </div>
-                <div class="input-group mb-3">
-                  <label class="input-group-text" for="inputGroupSelect01">DROP</label>
-                  <select class="form-select" aria-label="Default select example" name="drop" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect01">DROP</label>
+                                <select class="form-select" aria-label="Default select example" name="drop" required>
                     <option value="">Current Location</option>
                     <option value="Charbagh">Charbagh</option>
                     <option value="Indira Nagar">Indira Nagar</option>
@@ -81,74 +83,82 @@
                     <option value="Basti">Basti</option>
                     <option value="Gorakhpur">Gorakhpur</option>
                   </select>
-                </div>
-                <div class="input-group mb-3">
-                  <label class="input-group-text" for="inputGroupSelect01">CAB TYPE</label>
-                  <select class="form-select" aria-label="Default select example" name="cab_type" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect01">CAB TYPE</label>
+                                <select class="form-select" aria-label="Default select example" name="cab_type" required>
                     <option value="">Dropdown to select Cab Type</option>
                     <option value="1">CedMicro</option>
                     <option value="2">CedMini</option>
                     <option value="3">CedRoyal</option>
                     <option value="4">CedSUV</option>
                   </select>
+                            </div>
+                            <div class="input-group mb-3 luggage">
+                                <span class="input-group-text" id="basic-addon1">LUGGAGE</span>
+                                <input type="text" class="form-control" id="luggage" name="luggage" placeholder="Enter Weight in KG">
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-warning" name="submit" type="submit">Calculate Fare</button>
+                            </div>
+                            <div id="result" class="mt-2"></div>
+                        </form>
+
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6  d-flex justify-content-center align-items-center flex-column">
+                        <!-- <img src="https://i.dlpng.com/static/png/1256153-taxi-png-taxi-png-800_422_preview.png" alt="" class="img-fluid position-relative"> -->
+                        <!-- <img src="https://i.dlpng.com/static/png/285705_preview.png" alt="" class="img-fluid position-relative"> -->
+                        <img src="taxi_1.png" alt="" class="img-fluid position-relative">
+                    </div>
                 </div>
-                <div class="input-group mb-3 luggage">
-                  <span class="input-group-text" id="basic-addon1">LUGGAGE</span>
-                  <input type="text" class="form-control" id="luggage" name="luggage" placeholder="Enter Weight in KG">
-                </div>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-warning" name="submit" type="submit">Calculate Fare</button>
-                </div>
-              </form>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-6  d-flex justify-content-center align-items-center flex-column">
-              <img src="https://i.dlpng.com/static/png/1256153-taxi-png-taxi-png-800_422_preview.png" alt="" class="img-fluid position-relative">
-            </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- //Showcase -->
     <section id="about" class="py-5">
-      <div class="container">
-        <div class="about-heading text-center">
-          <h3>About CedCab</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, error.</p>
+        <div class="container">
+            <div class="about-heading text-center">
+                <h3>About CedCab</h3>
+                <p>Choose from a range of categories and price.</p>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-6">
+                    <img src="taxi-img.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus eligendi consectetur deserunt sunt odio quia similique accusantium. Enim ipsum velit voluptatibus, minima. Explicabo quibusdam a hic aperiam? Explicabo,
+                        ipsam.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat necessitatibus esse et corrupti laboriosam neque eligendi cupiditate provident ex.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Alias, eveniet.</p>
+                </div>
+            </div>
         </div>
-        <div class="row pt-5">
-          <div class="col-md-6">
-            <img src="https://taxiguru.in/wp-content/themes/taxiv2/img/taxi-img.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, temporibus eligendi consectetur deserunt sunt odio quia similique accusantium. Enim ipsum velit voluptatibus, minima. Explicabo quibusdam a hic aperiam? Explicabo, ipsam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat necessitatibus esse et corrupti laboriosam neque eligendi cupiditate provident ex.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Alias, eveniet.</p>
-          </div>
-        </div>
-      </div>
     </section>
+
     <footer>
-      <div class="container-fluid bg-dark">
-        <div class="row pt-2">
-          <div class="col-md-4 text-center text-light">
-             <i class="fab fa-facebook-square fs-3"></i>
-              <i class="fab fa-twitter-square fs-3"></i>
-              <i class="fab fa-instagram-square fs-3"></i>
-          </div>
-          <div class="col-md-4 text-center">
-             <a href="#" class="text-warning h3">Ced<span class="text-light">Cab</span></a>
-          </div>
-          <div class="col-md-4 text-center text-light">
-             <p>All Rights Reserved @ CEDCOSS</p>
-          </div>
+        <div class="container-fluid bg-dark">
+            <div class="row pt-2">
+                <div class="col-md-4 text-center text-light">
+                    <i class="fab fa-facebook-square fs-3"></i>
+                    <i class="fab fa-twitter-square fs-3"></i>
+                    <i class="fab fa-instagram-square fs-3"></i>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="#" class="text-warning h3">Ced<span class="text-light">Cab</span></a>
+                </div>
+                <div class="col-md-4 text-center text-light">
+                    <p>All Rights Reserved @ CEDCOSS</p>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!-- Option 1: Bootstrap Bundle with Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
